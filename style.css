@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  background: #fdfdfd;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #ff69b4;
+  color: #fff;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 1.5rem;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffe6f2;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: url('assets/hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(255, 105, 180, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: white;
+  color: #ff69b4;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ffe6f2;
+}
+
+/* Services */
+.services {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff0f5;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.price {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #ff1493;
+}
+
+/* Gallery */
+.gallery {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Booking */
+.booking {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.booking input, .booking select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #ff69b4;
+  color: white;
+}
